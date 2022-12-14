@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    background-color: #0e1058;
+    font-family: 'Josefin Sans', sans-serif;
+}
+h1,h2,h3,p,ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+button{
+    display: inline-block;
+    border:0;
+    color:inherit;
+    cursor:pointer;
+    font-weight:bolder;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+input{
+    outline:0;
+    color:inherit;
+    font-family: inherit;
+}

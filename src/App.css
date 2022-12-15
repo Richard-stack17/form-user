@@ -33,7 +33,7 @@
   text-align: center;
 }
 .initial-img{
-  width: 250px;
+  max-width: 200px;
   border-radius: 50%;
 }
 .initial-msg{
@@ -53,32 +53,4 @@
   margin-right: auto;
   padding: 3em;
 }
-.conf-container{
-  width: 100%;
-  position: fixed;
-  min-height: 100vh;
-  padding: 3em;
-  text-align: center;
-  backdrop-filter:blur(2px);
-  background-color: rgba(16, 0, 0, 0.695);
-  z-index: 1;
-  padding-bottom: 120px;
-  
-}
-.conf{
-  background-color:wheat;
-  max-width: 420px;
-  padding: 2rem;
-  border-radius: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20vh;
-  position: relative;
-  
-}
-.conf-title{
-  padding-bottom: 1rem;
-}
-.close__conf{
-  transform:translateX(-100%);
-}
+

@@ -50,9 +50,7 @@ function App() {
            />
           ))
         }
-        
-      </div>
-      <div className='initial-container'>
+        <div className='initial-container'>
         {
           users?.length==0 ? //en el users está la infromación y de donde se captura
               <InitialMenu/>
@@ -60,6 +58,8 @@ function App() {
           
         }
       </div>
+      </div>
+      
       
     </div>
   )

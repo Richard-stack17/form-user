@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import './styles/formUser.css'
-const FormUser = ({createNewUser,updateInfo, updateUserById,setUpdateInfo,setCloseForm,setInitial}) => {
+const FormUser = ({createNewUser,updateInfo, updateUserById,setUpdateInfo,setCloseForm,setInitial,setConfirmation}) => {
 
     useEffect(()=>{
         reset(updateInfo)

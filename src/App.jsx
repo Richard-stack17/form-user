@@ -13,13 +13,15 @@ function App() {
   const {users,getAllUsers,createNewUser,deleteUserById,updateUserById}= useCrud()
   const [initial, setInitial] = useState(true)
   const [updateInfo, setUpdateInfo] = useState()
-
+  
+  
   useEffect(()=>{
     getAllUsers()
   },[])//cuando el arreglo está vacío significa que solo se renderizara una vez al inicio
   
   return (
     <div className="App">
+    
       <h1 className='App__title'>Users</h1>
       <button onClick={() => setCloseForm(false)}className='App__btn'>Open Form</button>
       {
@@ -31,9 +33,12 @@ function App() {
           setUpdateInfo={setUpdateInfo}
           setCloseForm={setCloseForm}
           setInitial={setInitial}
+          
+          
         />
       </div>
       }
+      
       <div className='user-container'>
         {
           users?.map(user  => (
@@ -45,17 +50,18 @@ function App() {
            />
           ))
         }
-        <div className='initial-container'>
+        
+      </div>
+      <div className='initial-container'>
         {
-          initial?
+          users?.length==0 ? //en el users está la infromación y de donde se captura
               <InitialMenu/>
           :console.log('Out menu initial')
           
         }
-        </div>
       </div>
+      
     </div>
   )
 }
-
 export default App
